@@ -52,10 +52,7 @@ $ruby backup_guide_pages.rb
 実行が完了すると、/output配下の実行日時のフォルダの中に下記のようなファイルが作成されます。
 
 * / yyyymmddHHMM 　・・・実行日時（バックアップした日時）
-  * / articles_index.html　・・・バックアップしたファイルの一覧（インデックス）
-  * / articles_index.csv　・・・バックアップしたファイルの一覧（Excelやスプレッドシートで利用するため用、内容はarticles_index.htmlと同様）
-  * / html　・・・バックアップした記事（記事ID.html.txt） *HTML記述
-
-
-
+  * / articles_index.html　・・・バックアップしたファイルの一覧（HTML形式）
+  * / articles_index.csv　・・・バックアップしたファイルの一覧（CSV形式）
+  * / html　・・・バックアップした記事（記事ID.html.txt）
 
