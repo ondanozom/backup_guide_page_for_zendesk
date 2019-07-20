@@ -37,12 +37,14 @@ token: 1で生成したトークン
 
 1． 実行ファイルをダブルクリックする
 
-Maｃの場合：
+### Macの場合
 
 /exec/backup_help_pages.command を実行（ダブルクリック）する
 
-Windowsの場合：
+### Windowsの場合
+直接Rubyスクリプトを実行してください。
 ```
 $ruby backup_guide_pages.rb 
 ```
+
 
