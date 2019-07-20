@@ -241,6 +241,9 @@ backup_ymdhm = now.strftime("%Y%m%d%H%M")
 # 設定をロード
 p $yaml['domain'] 
 
+# フォルダがなかったら作る
+FileUtils.mkdir_p("#{$DIR_TEMP}") unless FileTest.exist?("#{$DIR_TEMP}")
+FileUtils.mkdir_p("#{$DIR_OUT}") unless FileTest.exist?("#{$DIR_OUT}")
 
 # 以前の作業ファイルを削除する
 FileUtils.rm(Dir.glob("#{$DIR_TEMP}/*"))
