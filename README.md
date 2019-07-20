@@ -29,6 +29,7 @@ Zendesk Guideの記事をローカルにバックアップするRubyスクリプ
 > チャネル > API > 設定 
 
 2. config.yaml を編集する
+以下の3カ所を修正してください。
 ```
 domain: https://your_domain.zendesk.com/
 account: yourname@yourdomain.com（管理者権限のアカウント）
