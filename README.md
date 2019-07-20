@@ -21,12 +21,23 @@ Curl 7.0 以上
   / output　・・・　出力したデータの格納先
   / temp  ・・・　テンポラリファイルの格納先
   
-## 実行手順
+## 初期設定
 
-1. config.yaml を編集する
+1. ZendeskにてAPI用のトークンを作成しておきます。
+> チャネル > API > 設定 からトークンを作成してください。
 
+2. config.yaml を編集する
 ```
 domain: https://your_domain.zendesk.com/
-account: user_support@street-academy.com
-token: Qeibjt3ZNiFL5SrnmcET28USNTIQx6Kix7kFm2GZ
+account: yourname@yourdomain.com（管理者権限のアカウント）
+token: 1で生成したトークン
 ```
+
+## 実行手順
+
+1． 実行ファイルをダブルクリックする
+Maｃの場合：
+/exec/backup_help_pages.command を実行（ダブルクリック）する
+Windowsの場合：
+``` $ruby backup_guide_pages.rb ```
+
