@@ -2,7 +2,7 @@
 Zendesk Guideの記事をローカルにバックアップするRubyスクリプトです。
 
 ## 概要
-スクリプトを実行すると、ZendeskGuideの記事（HTML）をローカルに保存します。
+スクリプトを実行すると、ZendeskGuideの指定したドメインのすべての記事（HTML）をローカルに保存します。
 下記のようなファイルが作成されます。
 
 * ヘルプページの記事一覧（HTML）
@@ -48,5 +48,14 @@ token: 1で生成したトークン
 ```
 $ruby backup_guide_pages.rb 
 ```
+
+実行が完了すると、/output配下の実行日時のフォルダの中に下記のようなファイルが作成されます。
+
+* / yyyymmddHHMM 　・・・実行日時（バックアップした日時）
+ */ articles_index.html　・・・バックアップしたファイルの一覧（インデックス）
+ */ articles_index.csv　・・・バックアップしたファイルの一覧（Excelやスプレッドシートで利用するため用、内容はarticles_index.htmlと同様）
+ */ html　・・・バックアップした記事（記事ID.html.txt） *HTML記述
+
+
 
 
