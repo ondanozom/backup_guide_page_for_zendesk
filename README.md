@@ -7,7 +7,7 @@ Zendesk Guideの記事をローカルにバックアップするRubyスクリプ
 
 * ヘルプページの記事一覧（HTML）
 * ヘルプページの記事一覧（CSV）
-* 記事（HTML）：　ヘルプページのバックアップファイルを作成する, ヘルプページのバックアップファイルを作成する ...
+* 記事（HTML）：　記事のHTMLファイル
 
 ## 必要環境（検証済み環境）
 Ruby 2.0 以上
@@ -24,7 +24,7 @@ Curl 7.0 以上
 ## 初期設定
 
 1. ZendeskにてAPI用のトークンを作成しておきます。
-> チャネル > API > 設定 からトークンを作成してください。
+> チャネル > API > 設定 
 
 2. config.yaml を編集する
 ```
@@ -36,8 +36,13 @@ token: 1で生成したトークン
 ## 実行手順
 
 1． 実行ファイルをダブルクリックする
+
 Maｃの場合：
+
 /exec/backup_help_pages.command を実行（ダブルクリック）する
+
 Windowsの場合：
-``` $ruby backup_guide_pages.rb ```
+```
+$ruby backup_guide_pages.rb 
+```
 
