@@ -1,4 +1,4 @@
-# backup_guide_page_for_zendesk
+# backup_guide_pages_for_zendesk
 Zendesk Guideの記事をローカルにバックアップするRubyスクリプトです。
 
 ## 概要
