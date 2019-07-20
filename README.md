@@ -35,11 +35,11 @@ token: 1で生成したトークン
 
 ## 実行手順
 
-1． 実行ファイルをダブルクリックする
+1． 実行ファイルをダブルクリックする。
 
 ### Macの場合
 
-/exec/backup_help_pages.command を実行（ダブルクリック）する
+/exec/backup_help_pages.command を実行（ダブルクリック）してください。
 
 ### Windowsの場合
 直接Rubyスクリプトを実行してください。
