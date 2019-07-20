@@ -2,6 +2,7 @@
 Zendesk Guideの記事をローカルにバックアップするRubyスクリプトです。
 
 ## 概要
+
 スクリプトを実行すると、ZendeskGuideの指定したドメインのすべての記事（HTML）をローカルに保存します。
 下記のようなファイルが作成されます。
 
@@ -29,6 +30,7 @@ Zendesk Guideの記事をローカルにバックアップするRubyスクリプ
 > チャネル > API > 設定 
 
 2. config.yaml を編集する
+
 以下の3カ所を修正してください。
 ```
 domain: https://your_domain.zendesk.com/
