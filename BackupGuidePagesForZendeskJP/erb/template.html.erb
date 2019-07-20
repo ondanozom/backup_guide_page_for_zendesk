@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQバックアップファイル一覧</title>
+<style type="text/css">
+<!--
+* {
+  font-size: 14px;
+}
+table {
+  border-collapse: collapse;
+  border: 0px #FFF solid;
+}
+td, th {
+  background: #efefef;
+  padding: 10px;
+  margin: 0px;
+  text-align: left;
+  border-collapse: collapse;
+  border: 0px #FFF solid;
+  border-bottom: 1px #FFF solid;
+}
+th {
+  background: #89d3ba;
+  color: #FFF;
+}
+#summary td {
+  font-weight: bold;
+}
+tr.row0 td {
+  background: #ffffff;
+}
+tr.draft td {
+  background: #efefef;
+}
+.cr {
+  align: center;
+  padding: 5px auto;
+  color : #efefef;
+}
+-->
+</style>
+</head>
+<body>
+  <table id="summary">
+    <tr>
+      <th>バックアップ日時</th>
+      <td><%=backup_datetime %></td>
+    </tr>
+    <tr>
+      <th>バックアップしたファイル数</th>
+      <td><%=backupfile_count %></td>
+    </tr>
+  </table>
+  <p></p>
+  <table id="bk_list">
+    <tr>
+      <th>No.</th>
+      <th>カテゴリ名</th>
+      <th>セクション名</th>
+      <th>記事ID</th>
+      <th>下書き</th>
+      <th>タイトル</th>
+      <th>作成日時</th>
+      <th>更新日時</th>
+    </tr>
+      
+    <% data_ary.each.with_index(1) do |line, i| %>
+    <tr class="row<%= i % 2 %>">
+      <td><%= i %></td>
+      <td><a href="<%= line['category_url'] %>" target="_blank"><%= line['category_name'] %></a></td>
+      <td><a href="<%= line['section_url'] %>" target="_blank"><%= line['section_name'] %></a></td>
+      <td><%= line['id'] %></td>
+      <td><%= "■" if line['draft'] %></td>
+      <td><a href="<%= line['html_url'] %>" target="_blank"><%= line['title'] %></a></td>
+      <td><%= line['created_at'] %></td>
+      <td><a href="./<%=folder %>/<%= line['backup_filename'] %>" target="_blank"><%= line['updated_at'] %></a></td>
+    </tr>
+    <% end %>
+  </table>
+  <div class="cr">Copyright : nozomu.onda@street-academy.com</div>
+</body>
+</html>
