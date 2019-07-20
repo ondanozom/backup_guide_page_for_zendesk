@@ -14,7 +14,7 @@ Zendesk Guideの記事をローカルにバックアップするRubyスクリプ
 * Ruby 2.0 以上
 * Curl 7.0 以上
 
-※上記以下のVerは未検証です。
+※上記以下のVersionは未検証です。
 
 ## フォルダ/ファイルの説明
 * / BackupGuidePages
